@@ -1,0 +1,8 @@
+{
+  "name": "react-weather",
+  "version": "1.0.0",
+  "description": "A Weather app built using react that displays temperature depending on location",
+  "main": "app.js",
+  "author": "Ayoub Nejjari <raysoflee07@gmail.com>",
+  "license": "MIT"
+}
