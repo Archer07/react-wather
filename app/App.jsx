@@ -4,6 +4,7 @@ import {Route, Router, IndexRoute, hashHistory} from 'react-router';
 import Main from 'Main';
 import Weather from 'Weather';
 import About from 'About';
+import Contact from 'Contact';
 
 class App extends Component {
   render() {
@@ -11,6 +12,7 @@ class App extends Component {
       <Router history={hashHistory}>
         <Route path="/" component={Main}>
         <Route path="about" component={About}/>
+        <Route path="contact" component={Contact} />
           <IndexRoute component={Weather}/>
         </Route>
 
