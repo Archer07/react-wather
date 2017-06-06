@@ -6,7 +6,7 @@ class Main extends Component {
     return (
       <div>
         <Nav />
-          <div className='container-fluid col-md-6 col-md-offset-4'>
+          <div className='container-fluid col-md-6 col-md-offset-2'>
             {this.props.children}
           </div>
       </div>

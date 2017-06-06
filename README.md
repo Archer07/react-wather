@@ -5,6 +5,7 @@ To run the App:
 * install webpack-dev-server
 * cd to the directory
 * yarn install
+* run:
 
 ```
 
