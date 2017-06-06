@@ -2,17 +2,16 @@ import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import {Route, Router, IndexRoute, hashHistory} from 'react-router';
 import Main from 'Main';
-import Sec from './components/Sec.jsx';
+import Weather from 'Weather';
+import About from 'About';
 
 class App extends Component {
   render() {
     return (
       <Router history={hashHistory}>
         <Route path="/" component={Main}>
-
-        </Route>
-        <Route path="/sec" component={Sec}>
-
+        <Route path="about" component={About}/>
+          <IndexRoute component={Weather}/>
         </Route>
 
       </Router>

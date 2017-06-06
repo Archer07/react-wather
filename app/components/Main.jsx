@@ -7,6 +7,7 @@ class Main extends Component {
       <div>
         <Nav />
         <h1> Main page</h1>
+        {this.props.children}
       </div>
     );
   }
