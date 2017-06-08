@@ -10,20 +10,7 @@ class WeatherForm extends Component {
       this.props.onSearch(city);
     }
 
-    // let appid = 'b519e4388d6d14e4951410748a62beca';
-    // $.ajax({
-    //   url:'http://api.openweathermap.org/data/2.5/weather?q='+city+'&units=metric&appid='+appid,
-    //   dataType:'json',
-    //   cache:false,
-    //   success: function(data) {
-    //     console.log(data);
-    //     alert(data.main.temp);
-    //   }.bind(this),
-    //   error: function(xhr, status, err) {
-    //     //this.setState({username:null});
-    //     alert(err);
-    //   }.bind(this)
-    // });
+    
   }
   render() {
     return (
