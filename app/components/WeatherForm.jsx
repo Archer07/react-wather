@@ -31,7 +31,7 @@ class WeatherForm extends Component {
       <form onSubmit={this.onSubmit.bind(this)} className="form-horizontal">
         <div className="form-group">
           <div className="col-lg-10">
-            <input type="text" className="form-control" ref="inputEmail" placeholder="Type the name of the City..."/>
+            <input type="text" className="form-control" ref="inputEmail" placeholder="Type the name of the City..." required/>
             <button type="submit" className="pull-right btn btn-primary wbtn">Get</button>
           </div>
         </div>
