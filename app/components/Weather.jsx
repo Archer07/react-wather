@@ -7,24 +7,27 @@ class Weather extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      location:'Oujda',
-      temp: 32
+      isLoading:true
     }
   }
   handleSearch (city) {
     let that = this;
-    //alert(TEMP.getTemp(city));
-    // this.state({
-    //   location:city,
-    TEMP.getTemp(city).then((temp) => {
-      that.setState({
-        location:city,
-        temp:temp
+    setTimeout(() => {
+      this.setState({isLoading:true});
+      TEMP.getTemp(city).then((temp) => {
+
+          that.setState({
+            location:city,
+            temp:temp,
+            hasData:true,
+            isLoading:false
+        });
+      }, (err) => {
+        alert(err)
+        this.setState({isLoading:false})
       });
-    }, (err) => {
-      alert(err);
-    });
-    // });
+    },1000);
+
 
     //
     // let appid = 'b519e4388d6d14e4951410748a62beca';
@@ -47,12 +50,23 @@ class Weather extends Component {
 
 
   }
+
   render() {
+    let renderMsg =  () => {
+
+      if (this.state.isLoading && this.state.hasData) {
+        return (<img src="img/loading.gif" alt="loading..." width="100"></img>);
+      } else if (this.state.location && this.state.temp) {
+        return (  <WeatherMsg {...this.state} />);
+      } else {
+        return (<h3>{this.state.error}</h3>);
+      }
+    };
     return (
       <div>
       <h2>Get The Weather:</h2>
       <WeatherForm onSearch={this.handleSearch.bind(this)}/>
-      <WeatherMsg {...this.state} />
+      {renderMsg()}
       </div>
     );
   }
