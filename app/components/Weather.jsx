@@ -15,8 +15,8 @@ class Weather extends Component {
     setTimeout(() => {
       this.setState({isLoading:true});
       TEMP.getTemp(city).then((temp) => {
-
-          that.setState({
+        // debugger;
+        that.setState({
             location:city,
             temp:temp,
             hasData:true,

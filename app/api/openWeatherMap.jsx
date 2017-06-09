@@ -8,6 +8,7 @@ let TEMP = {
     let encodedLoc = encodeURIComponent(location); // encode input for browser uri
     let requestURL = `${OPEN_WM_URL}&q=${encodedLoc}`;
   return axios.get(requestURL).then((res) => { // takes a uri, fetches it and goes back with result
+      //debugger;
       if (res.data.cod && res.data.message) {
         throw new Error(res.data.message);
       } else {
