@@ -12679,7 +12679,12 @@ var About = function About(props) {
     _react2.default.createElement(
       'p',
       null,
-      'This is the about page from Master Branch'
+      'This app consumes the OpenWeatherMap API for current weather Data. The only information it provides is the temperature depneding on the location provided in the input field.'
+    ),
+    _react2.default.createElement(
+      'p',
+      null,
+      'This app uses NodeJs, Express, and React as the main technologies that was built with.'
     )
   );
 };

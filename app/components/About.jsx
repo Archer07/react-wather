@@ -16,7 +16,8 @@ let About = (props) => {
   return (
     <div>
       <h1> About Page</h1>
-      <p>This is the about page from Master Branch</p>
+        <p>This app consumes the OpenWeatherMap API for current weather Data. The only information it provides is the temperature depneding on the location provided in the input field.</p>
+        <p>This app uses NodeJs, Express, and React as the main technologies that was built with.</p>
     </div>
   );
 }
