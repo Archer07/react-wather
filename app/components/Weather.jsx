@@ -35,8 +35,8 @@ class Weather extends Component {
   }
   render() {
     return (
-      <div>
-      <h2>Get The Weather:</h2>
+      <div className="row large-8">
+      <h2 className="mainT">Get The Weather:</h2>
       <WeatherForm onSearch={this.handleSearch.bind(this)}/>
       <WeatherMsg {...this.state} />
       </div>

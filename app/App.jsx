@@ -5,6 +5,7 @@ import Main from 'Main';
 import Weather from 'Weather';
 import About from 'About';
 import Contact from 'Contact';
+import Examples from 'Examples'
 
 
 
@@ -16,6 +17,7 @@ class App extends Component {
       <Router history={hashHistory}>
         <Route path="/" component={Main}>
         <Route path="about" component={About}/>
+        <Route path="examples" component={Examples}/>
         <Route path="contact" component={Contact} />
           <IndexRoute component={Weather}/>
         </Route>
