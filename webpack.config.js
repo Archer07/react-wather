@@ -1,11 +1,16 @@
+const webpack = require('webpack');
+
 module.exports = {
 	entry: ['script-loader!jquery/dist/jquery.min.js',
 					'script-loader!foundation-sites/dist/foundation.min.js', './app/app.js'],
-	externals: {
+	externals: { // set modules to variables to use them inside scripts
 		jquery: 'jQuery'
 	},
 	plugins:[
-
+		new webpack.ProvidePlugin({
+			'$': 'jquery',
+			'jQuery': 'jquery'
+		})
 	],
 	output: {
 		path: __dirname,
