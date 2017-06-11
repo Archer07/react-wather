@@ -1,5 +1,12 @@
 module.exports = {
-	entry: './app/app.js',
+	entry: ['script!jquery/dist/jquery.min.js',
+					'script!foundation-sites/dist/foundation.min.js', './app/app.js'],
+	externals: {
+		jquery: 'jQuery'
+	},
+	plugins:[
+
+	],
 	output: {
 		path: __dirname,
 		filename: 'public/app.js'
