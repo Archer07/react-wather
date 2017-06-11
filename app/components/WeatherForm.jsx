@@ -29,11 +29,13 @@ class WeatherForm extends Component {
     return (
       <div>
       <form onSubmit={this.onSubmit.bind(this)} className="form-horizontal">
-        <div className="form-group">
-          <div className="col-lg-10">
-            <input type="text" className="form-control" ref="inputEmail" placeholder="Type the name of the City..." required/>
-            <button type="submit" className="pull-right btn btn-primary wbtn">Get</button>
+        <div className="col-md-8">
+        <div className="input-group">
+          <input className="input-group-field" type="search" ref="inputEmail" placeholder="Type the name of the City..." required/>
+          <div className="input-group-button">
+            <input type="submit" className="button" value="Submit"/>
           </div>
+        </div>
         </div>
       </form>
       </div>

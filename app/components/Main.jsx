@@ -18,7 +18,7 @@ let Main = (props) => {
   return (
     <div>
       <Nav />
-        <div className='weatherForm col-md-4 col-md-offset-2'>
+        <div className='weatherForm col-md-10 col-md-offset-1'>
           {props.children}
         </div>
     </div>
