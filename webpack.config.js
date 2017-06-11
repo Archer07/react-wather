@@ -1,6 +1,6 @@
 module.exports = {
-	entry: ['script!jquery/dist/jquery.min.js',
-					'script!foundation-sites/dist/foundation.min.js', './app/app.js'],
+	entry: ['script-loader!jquery/dist/jquery.min.js',
+					'script-loader!foundation-sites/dist/foundation.min.js', './app/app.js'],
 	externals: {
 		jquery: 'jQuery'
 	},
