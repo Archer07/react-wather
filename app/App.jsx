@@ -6,8 +6,7 @@ import Weather from 'Weather';
 import About from 'About';
 import Contact from 'Contact';
 
-// load foundation
-require('style-loader!css-loader!foundation-sites/dist/foundation.min.css')
+
 
 $(document).foundation();
 

@@ -39,6 +39,7 @@ class Weather extends Component {
       <h2>Get The Weather:</h2>
       <WeatherForm onSearch={this.handleSearch.bind(this)}/>
       <WeatherMsg {...this.state} />
+      <h4>Zurb Version</h4>
       </div>
     );
   }
