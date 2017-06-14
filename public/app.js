@@ -12833,6 +12833,15 @@ var Examples = function (_Component) {
               { to: '/?location=Madrid' },
               'Madrid, ES'
             )
+          ),
+          _react2.default.createElement(
+            'li',
+            null,
+            _react2.default.createElement(
+              _reactRouter.Link,
+              { to: '/?location=Istanbul' },
+              'Instanbul, TR'
+            )
           )
         )
       );
@@ -12940,7 +12949,7 @@ var Nav = function (_Component) {
               _react2.default.createElement(
                 _reactRouter.IndexLink,
                 { to: '/', activeClassName: 'active', activeStyle: { fontWeight: 'bold' } },
-                'Home'
+                'Get Weather'
               )
             ),
             _react2.default.createElement(
@@ -13075,7 +13084,7 @@ var Weather = function (_Component) {
     value: function render() {
       return _react2.default.createElement(
         'div',
-        { className: 'row large-6' },
+        { className: 'row large-8' },
         _react2.default.createElement(
           'h2',
           { className: 'mainT' },
