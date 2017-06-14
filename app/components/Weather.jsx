@@ -6,8 +6,8 @@ class Weather extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      location:'Oujda',
-      temp: 32
+      location:'Rabat',
+      temp: 'XX'
     }
   }
   handleSearch (city) {
